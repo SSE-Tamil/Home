@@ -1,6 +1,6 @@
 {
       "name": "Student Feedback Web Page",
-      "homepage": "https://whiteHAT-devOPS.github.io/SIMATS_hub",
+      "homepage": "https://sse-tamil.github.io/Home",
       "version": "0.1.0",
       "private": true,
       "dependencies": {
@@ -57,11 +57,9 @@
             "vite": "6.3.5"
       },
       "scripts": {
-            "dev": "vite",
-            "build": "vite build",
+            "predeploy": "npm run build",
+            "deploy": "gh-pages -d build",
             "predeploy": "npm run build",
             "deploy": "gh-pages -d build"
-
       }
-      
 }
